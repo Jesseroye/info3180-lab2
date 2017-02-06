@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+<head>
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='profile.css') }}">
+</head>
+
+{% block main %}
+
+<h1 class="page-header">Profile</h1>
+
+<img src= "{{ url_for('static', filename='rathalos_hunter_by_fonteart-d78ocmp.jpg')}}"></img>
+
+<table>
+  <tr>
+    <th>Jesse Roye</th>
+  </tr>
+  <tr>
+    <td>Today's date is {{name}}<hr><strong>Username:</strong>Monster Hunter<br><strong>ID Number:</strong> 620077420<br><strong>Age:</strong> 104<br><strong>Gender:</strong> Female<hr>I am a bad boy.</td>
+  </tr>
+</table>
+
+{% endblock %}
